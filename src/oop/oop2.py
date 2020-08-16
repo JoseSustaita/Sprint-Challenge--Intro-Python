@@ -20,14 +20,13 @@ class GroundVehicle():
 #
 # Override the drive() method in Motorcycle so that it returns "BRAAAP!!"
 
+# TODO
 class Motorcycle(GroundVehicle):
     def __init__(self, num_wheels=2):
         super().__init__(num_wheels)
 
     def drive(self):
         return "BRAAAP!!"
-
-# TODO
 
 
 vehicles = [
@@ -41,3 +40,7 @@ vehicles = [
 # Go through the vehicles list and print the result of calling drive() on each.
 
 # TODO
+
+
+for vehicle in vehicles:
+    print(f"{vehicle.drive()}")
